@@ -4,8 +4,8 @@ A modern React-based dashboard for analyzing investment strategies and portfolio
 
 ## 🚀 Live Demo
 
-- **Live Site**: [Coming Soon - Netlify URL]
-- **Repository**: [GitHub Repository URL]
+- **Repository**: https://github.com/ebalow01/make10percent
+- **Live Site**: [Deploy to Netlify from GitHub repo]
 
 ## ✨ Features
 

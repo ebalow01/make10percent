@@ -8,6 +8,7 @@ import TechnicalIndicators from './components/TechnicalIndicators'
 import MarketTimingEducation from './components/MarketTimingEducation'
 import RiskManagementTools from './components/RiskManagementTools'
 import ComplianceEducation from './components/ComplianceEducation'
+import TradingWidget from './components/TradingWidget'
 
 function App() {
   // Fallback data to prevent blank screen (privacy-safe - no dollar amounts)
@@ -110,6 +111,7 @@ function App() {
       )}
 
       <div className="dashboard-grid">
+        <TradingWidget />
         <StrategyOverview data={strategyData} />
         <RealTimeMetrics marketData={marketData} />
         <PositionsGrid positions={strategyData?.positions} marketData={marketData} />

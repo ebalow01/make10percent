@@ -4,6 +4,10 @@ import StrategyOverview from './components/StrategyOverview'
 import PositionsGrid from './components/PositionsGrid'
 import RealTimeMetrics from './components/RealTimeMetrics'
 import MonteCarloResults from './components/MonteCarloResults'
+import TechnicalIndicators from './components/TechnicalIndicators'
+import MarketTimingEducation from './components/MarketTimingEducation'
+import RiskManagementTools from './components/RiskManagementTools'
+import ComplianceEducation from './components/ComplianceEducation'
 
 function App() {
   // Fallback data to prevent blank screen (privacy-safe - no dollar amounts)
@@ -110,6 +114,10 @@ function App() {
         <RealTimeMetrics marketData={marketData} />
         <PositionsGrid positions={strategyData?.positions} marketData={marketData} />
         <MonteCarloResults data={strategyData?.monteCarlo} />
+        <TechnicalIndicators marketData={marketData} />
+        <MarketTimingEducation />
+        <RiskManagementTools />
+        <ComplianceEducation />
       </div>
     </div>
   )

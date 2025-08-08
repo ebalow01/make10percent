@@ -23,7 +23,8 @@
       "Bash(gh repo view:*)",
       "Bash(git branch:*)",
       "Bash(git checkout:*)",
-      "Bash(git ls-tree:*)"
+      "Bash(git ls-tree:*)",
+      "Bash(grep:*)"
     ],
     "deny": []
   }

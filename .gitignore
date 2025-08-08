@@ -32,7 +32,12 @@ logs/
 # Python
 __pycache__/
 *.pyc
-*.json
+
+# Analysis results (but keep package.json)
+*_results.json
+*_output.json
+realistic_strategy_results.json
+investment_analysis_results.json
 
 # Windows
 *.bat

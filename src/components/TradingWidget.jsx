@@ -54,25 +54,25 @@ const TradingWidget = () => {
     {
       id: 'qqq',
       symbol: 'QQQ',
-      contract: 'BUY QQQ Feb 21 $575C (ESTIMATED)',
+      contract: 'SELL QQQ Feb 21 $575C (ESTIMATED)',
       allocation: '15%',
       entryTrigger: 'QQQ stability check',
-      currentPrice: '$570.00 (VERIFY REAL-TIME)',
+      currentPrice: '$569.24 (VERIFY REAL-TIME)',
       status: 'waiting'
     },
     {
       id: 'spy',
       symbol: 'SPY',
-      contract: 'BUY SPY Weekly ATM CALLS (ESTIMATED)',
+      contract: 'SELL SPY Weekly $635C (ESTIMATED)',
       allocation: '15%',
       entryTrigger: 'Market strength confirmation',
-      currentPrice: '$575.00 (VERIFY REAL-TIME)',
+      currentPrice: '$632.25 (VERIFY REAL-TIME)',
       status: 'waiting'
     },
     {
       id: 'msft',
       symbol: 'MSFT',
-      contract: 'BUY MSFT Feb 21 $530C (ESTIMATED)',
+      contract: 'SELL MSFT Feb 21 $530C (ESTIMATED)',
       allocation: '20%',
       entryTrigger: 'MSFT stability check',
       currentPrice: '$520.84 (VERIFY REAL-TIME)',
@@ -81,19 +81,19 @@ const TradingWidget = () => {
     {
       id: 'googl',
       symbol: 'GOOGL',
-      contract: 'BUY GOOGL Feb 21 $195C (ESTIMATED)',
+      contract: 'SELL GOOGL Feb 21 $200C (ESTIMATED)',
       allocation: '20%',
       entryTrigger: 'GOOGL stability check',
-      currentPrice: '$190.00 (VERIFY REAL-TIME)',
+      currentPrice: '$196.52 (VERIFY REAL-TIME)',
       status: 'ready'
     },
     {
       id: 'amd',
       symbol: 'AMD',
-      contract: 'BUY AMD Mar 21 $180C (ESTIMATED)',
+      contract: 'SELL AMD Mar 21 $175C (ESTIMATED)',
       allocation: '20%',
       entryTrigger: 'AMD stability check',
-      currentPrice: '$175.00 (VERIFY REAL-TIME)',
+      currentPrice: '$172.40 (VERIFY REAL-TIME)',
       status: 'ready'
     }
   ]
@@ -195,16 +195,19 @@ const TradingWidget = () => {
         <h3>⚠️ Paper Trading Risk Management</h3>
         <div className="risk-rules">
           <div className="risk-item">
-            <strong>Limited Risk:</strong> Maximum loss = premium paid (buying calls)
+            <strong>Higher Risk:</strong> Unlimited loss potential when selling calls
           </div>
           <div className="risk-item">
             <strong>Position Size:</strong> Never exceed allocation percentages
           </div>
           <div className="risk-item">
-            <strong>VIX Check:</strong> Reduce positions if VIX > 25 (high volatility)
+            <strong>VIX Check:</strong> Abort if VIX > 25 (high volatility)
           </div>
           <div className="risk-item">
-            <strong>Time Decay:</strong> Options lose value daily - timing matters
+            <strong>Time Decay:</strong> Works in our favor (collect premium)
+          </div>
+          <div className="risk-item">
+            <strong>Strike Selection:</strong> Out-of-money strikes for safety buffer
           </div>
           <div className="risk-item">
             <strong>No Rush:</strong> Better to miss entry than make bad entry
@@ -215,8 +218,8 @@ const TradingWidget = () => {
       <div className="educational-note">
         <h4>🎓 Learning Objectives</h4>
         <p>
-          Practice Level 1 options trading (buying calls only) with proper timing and 
-          risk management. Build confidence in long options strategy through paper trading 
+          Practice selling options strategies with proper timing and risk management. 
+          Build confidence in premium collection strategy through paper trading 
           simulation without financial risk.
         </p>
       </div>

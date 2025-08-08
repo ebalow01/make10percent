@@ -1028,6 +1028,41 @@ investment-strategy-dashboard/
 
 **DEADLINE: Complete privacy updates and deployment ASAP**
 
+---
+
+## REFINEMENT REQUEST: POSITION DISPLAY (2025-08-08)
+**Client Feedback: Position cards need to show ONLY ticker and allocation percentage**
+
+### UI Agent - URGENT REFINEMENT:
+**Current Issue**: Position cards still show strategy details, premiums, options info
+**Required Change**: Strip down to MINIMAL information only
+
+**NEW Position Card Requirements:**
+- Ticker symbol (MSFT, GOOGL, AMD, QQQ, SPY)
+- Allocation percentage (20%, 20%, 20%, 15%, 15%)
+- **REMOVE**: All strategy details, option strikes, premiums, contract info
+- **REMOVE**: Expected returns, probability percentages
+- **KEEP**: Simple, clean ticker + allocation display only
+
+**Example of desired output:**
+```
+MSFT - 20%
+GOOGL - 20% 
+AMD - 20%
+QQQ - 15%
+SPY - 15%
+```
+
+**This makes it completely generic - just showing portfolio allocation without any trading specifics.**
+
+### Additional Privacy Requirements:
+- Remove success probability percentages from position cards
+- Keep overall strategy success rate (49.3%) in main overview only
+- Make position section purely allocation-focused
+- No trading strategy hints or option details
+
+**DEADLINE: Implement simplified position display immediately**
+
 ## Agent Assignments
 **Project Manager Update (2025-08-08):**
 Team assembled successfully. We have:

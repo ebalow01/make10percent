@@ -11,41 +11,11 @@ function App() {
     successProbability: 49.3,
     targetReturn: 10,
     positions: [
-      {
-        ticker: 'MSFT',
-        strategy: 'Feb 21 Calls',
-        allocation: 20,
-        probability: 55,
-        expectedReturn: '15-25%'
-      },
-      {
-        ticker: 'GOOGL',
-        strategy: 'Feb 21 Calls',
-        allocation: 20,
-        probability: 50,
-        expectedReturn: '20-30%'
-      },
-      {
-        ticker: 'AMD',
-        strategy: 'Mar 21 Calls',
-        allocation: 20,
-        probability: 50,
-        expectedReturn: '25-40%'
-      },
-      {
-        ticker: 'QQQ',
-        strategy: 'Feb 21 Calls',
-        allocation: 15,
-        probability: 55,
-        expectedReturn: '12-18%'
-      },
-      {
-        ticker: 'SPY',
-        strategy: 'Weekly ATM',
-        allocation: 15,
-        probability: 45,
-        expectedReturn: '5-8%/wk'
-      }
+      { ticker: 'MSFT', allocation: 20 },
+      { ticker: 'GOOGL', allocation: 20 },
+      { ticker: 'AMD', allocation: 20 },
+      { ticker: 'QQQ', allocation: 15 },
+      { ticker: 'SPY', allocation: 15 }
     ],
     monteCarlo: {
       successRate: 49.3,

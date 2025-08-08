@@ -54,47 +54,52 @@ const TradingWidget = () => {
     {
       id: 'qqq',
       symbol: 'QQQ',
-      contract: 'SELL QQQ Feb 21 $575C (ESTIMATED)',
-      allocation: '15%',
-      entryTrigger: 'QQQ stability check',
-      currentPrice: '$569.24 (VERIFY REAL-TIME)',
-      status: 'waiting'
+      contract: 'SELL QQQ Feb 21 $580C',
+      allocation: '15% ($105,000)',
+      entryTrigger: 'QQQ holds above $565',
+      currentPrice: '$569.24',
+      status: 'waiting',
+      action: 'SELL TO OPEN 700 contracts @ ~$1.50 premium'
     },
     {
       id: 'spy',
       symbol: 'SPY',
-      contract: 'SELL SPY Weekly $635C (ESTIMATED)',
-      allocation: '15%',
-      entryTrigger: 'Market strength confirmation',
-      currentPrice: '$632.25 (VERIFY REAL-TIME)',
-      status: 'waiting'
+      contract: 'SELL SPY Weekly $640C',
+      allocation: '15% ($105,000)',
+      entryTrigger: 'SPY above $630 support',
+      currentPrice: '$632.25',
+      status: 'waiting',
+      action: 'SELL TO OPEN 875 contracts @ ~$1.20 premium'
     },
     {
       id: 'msft',
       symbol: 'MSFT',
-      contract: 'SELL MSFT Feb 21 $530C (ESTIMATED)',
-      allocation: '20%',
-      entryTrigger: 'MSFT stability check',
-      currentPrice: '$520.84 (VERIFY REAL-TIME)',
-      status: 'ready'
+      contract: 'SELL MSFT Feb 21 $535C',
+      allocation: '20% ($140,000)',
+      entryTrigger: 'MSFT stable above $515',
+      currentPrice: '$520.84',
+      status: 'ready',
+      action: 'SELL TO OPEN 560 contracts @ ~$2.50 premium'
     },
     {
       id: 'googl',
       symbol: 'GOOGL',
-      contract: 'SELL GOOGL Feb 21 $200C (ESTIMATED)',
-      allocation: '20%',
-      entryTrigger: 'GOOGL stability check',
-      currentPrice: '$196.52 (VERIFY REAL-TIME)',
-      status: 'ready'
+      contract: 'SELL GOOGL Feb 21 $205C',
+      allocation: '20% ($140,000)',
+      entryTrigger: 'GOOGL holds $195 level',
+      currentPrice: '$196.52',
+      status: 'ready',
+      action: 'SELL TO OPEN 1400 contracts @ ~$1.00 premium'
     },
     {
       id: 'amd',
       symbol: 'AMD',
-      contract: 'SELL AMD Mar 21 $175C (ESTIMATED)',
-      allocation: '20%',
-      entryTrigger: 'AMD stability check',
-      currentPrice: '$172.40 (VERIFY REAL-TIME)',
-      status: 'ready'
+      contract: 'SELL AMD Mar 21 $180C',
+      allocation: '20% ($140,000)',
+      entryTrigger: 'AMD above $170 support',
+      currentPrice: '$172.40',
+      status: 'ready',
+      action: 'SELL TO OPEN 933 contracts @ ~$1.50 premium'
     }
   ]
 
@@ -195,19 +200,19 @@ const TradingWidget = () => {
         <h3>⚠️ Paper Trading Risk Management</h3>
         <div className="risk-rules">
           <div className="risk-item">
-            <strong>Higher Risk:</strong> Unlimited loss potential when selling calls
+            <strong>Strategy Dependent:</strong> Risk profile depends on buying vs selling options
           </div>
           <div className="risk-item">
             <strong>Position Size:</strong> Never exceed allocation percentages
           </div>
           <div className="risk-item">
-            <strong>VIX Check:</strong> Abort if VIX > 25 (high volatility)
+            <strong>VIX Check:</strong> Monitor volatility levels before entry
           </div>
           <div className="risk-item">
-            <strong>Time Decay:</strong> Works in our favor (collect premium)
+            <strong>Time Decay:</strong> Consider time value impact on options
           </div>
           <div className="risk-item">
-            <strong>Strike Selection:</strong> Out-of-money strikes for safety buffer
+            <strong>Strike Selection:</strong> Choose appropriate strikes for strategy
           </div>
           <div className="risk-item">
             <strong>No Rush:</strong> Better to miss entry than make bad entry
@@ -218,8 +223,8 @@ const TradingWidget = () => {
       <div className="educational-note">
         <h4>🎓 Learning Objectives</h4>
         <p>
-          Practice selling options strategies with proper timing and risk management. 
-          Build confidence in premium collection strategy through paper trading 
+          Practice options trading concepts including timing, risk management, and position sizing. 
+          Build confidence in systematic strategy execution through paper trading 
           simulation without financial risk.
         </p>
       </div>

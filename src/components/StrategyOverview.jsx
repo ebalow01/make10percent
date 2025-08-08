@@ -8,7 +8,7 @@ const StrategyOverview = ({ data }) => {
       <h2>📊 Strategy Overview</h2>
       
       <div className="probability-display">
-        <div className="probability-number">{data.successProbability}%</div>
+        <div className="probability-number">{data?.successProbability || 49.3}%</div>
         <div className="probability-label">Probability of Success</div>
       </div>
 

@@ -54,46 +54,46 @@ const TradingWidget = () => {
     {
       id: 'qqq',
       symbol: 'QQQ',
-      contract: 'Feb 21 $575C',
+      contract: 'Feb 21 $575C (SAMPLE)',
       allocation: '15%',
       entryTrigger: 'QQQ > $570',
-      currentPrice: '$574.20',
+      currentPrice: '$574.20 (SAMPLE)',
       status: 'waiting'
     },
     {
       id: 'spy',
       symbol: 'SPY',
-      contract: 'Weekly ATM Calls',
+      contract: 'Weekly ATM Calls (SAMPLE)',
       allocation: '15%',
       entryTrigger: 'Market strength',
-      currentPrice: '$484.50',
+      currentPrice: '$484.50 (SAMPLE)',
       status: 'waiting'
     },
     {
       id: 'msft',
       symbol: 'MSFT',
-      contract: 'Feb 21 $430C',
+      contract: 'Feb 21 $430C (SAMPLE)',
       allocation: '20%',
       entryTrigger: 'MSFT > $425',
-      currentPrice: '$429.80',
+      currentPrice: '$429.80 (SAMPLE)',
       status: 'ready'
     },
     {
       id: 'googl',
       symbol: 'GOOGL',
-      contract: 'Feb 21 $190C',
+      contract: 'Feb 21 $190C (SAMPLE)',
       allocation: '20%',
       entryTrigger: 'GOOGL > $185',
-      currentPrice: '$188.90',
+      currentPrice: '$188.90 (SAMPLE)',
       status: 'ready'
     },
     {
       id: 'amd',
       symbol: 'AMD',
-      contract: 'Mar 21 $180C',
+      contract: 'Mar 21 $180C (SAMPLE)',
       allocation: '20%',
       entryTrigger: 'Pullback $175-177',
-      currentPrice: '$176.30',
+      currentPrice: '$176.30 (SAMPLE)',
       status: 'ready'
     }
   ]
@@ -214,6 +214,15 @@ const TradingWidget = () => {
         <p>
           Practice proper execution timing, risk management, and position sizing 
           without financial risk. Build confidence in the strategy through simulation.
+        </p>
+      </div>
+
+      <div className="price-disclaimer">
+        <h4>⚠️ Important Note</h4>
+        <p>
+          All prices and contracts shown are <strong>SAMPLE DATA</strong> for educational purposes. 
+          In real trading, always verify current market prices and contract specifications 
+          before executing any trades.
         </p>
       </div>
     </div>
